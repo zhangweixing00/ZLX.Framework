@@ -1,18 +1,21 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZLX.Framework.ToolKit.DP_Static", "ZLX.Framework.ToolKit.DP_Static\ZLX.Framework.ToolKit.DP_Static.csproj", "{F0A37A42-28C4-41AE-A4D6-9A244EC956FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZLX.Framework.ToolKit.BytesHelper", "ZLX.Framework.ToolKit.BytesHelper\ZLX.Framework.ToolKit.BytesHelper.csproj", "{019F9DCC-676A-4087-B5EE-B1C99C05E622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZLX.Framework.CP.Message", "ZLX.Framework.CP.MessageInfo\ZLX.Framework.CP.Message.csproj", "{D2A8C98A-DCA5-4F75-8686-8181038C1EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAndCheck", "TestAndCheck\TestAndCheck.csproj", "{FEF57D14-F963-4879-8EF4-33C681D751C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZLX.Framework.ToolKit.Encrypt", "ZLX.Framework.ToolKit.EncryptUtils\ZLX.Framework.ToolKit.Encrypt.csproj", "{7BF50F99-1703-4A8E-AF98-258ABEBD6053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZLX.Framework.ToolKit.Compress", "ZLX.Framework.ToolKit.Compress\ZLX.Framework.ToolKit.Compress.csproj", "{483E50CB-D043-4125-8E5B-4AAF3E83E70D}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs40
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ZLX.Framework.ToolKit.DP_Static\\ZLX.Framework.ToolKit.DP_Static.csproj
-		SccProjectName1 = ZLX.Framework.ToolKit.DP_Static
-		SccLocalPath1 = ZLX.Framework.ToolKit.DP_Static
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -22,6 +25,26 @@ Global
 		{F0A37A42-28C4-41AE-A4D6-9A244EC956FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0A37A42-28C4-41AE-A4D6-9A244EC956FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0A37A42-28C4-41AE-A4D6-9A244EC956FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019F9DCC-676A-4087-B5EE-B1C99C05E622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019F9DCC-676A-4087-B5EE-B1C99C05E622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019F9DCC-676A-4087-B5EE-B1C99C05E622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019F9DCC-676A-4087-B5EE-B1C99C05E622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A8C98A-DCA5-4F75-8686-8181038C1EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A8C98A-DCA5-4F75-8686-8181038C1EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A8C98A-DCA5-4F75-8686-8181038C1EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A8C98A-DCA5-4F75-8686-8181038C1EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF57D14-F963-4879-8EF4-33C681D751C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF57D14-F963-4879-8EF4-33C681D751C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF57D14-F963-4879-8EF4-33C681D751C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF57D14-F963-4879-8EF4-33C681D751C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF50F99-1703-4A8E-AF98-258ABEBD6053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF50F99-1703-4A8E-AF98-258ABEBD6053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF50F99-1703-4A8E-AF98-258ABEBD6053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF50F99-1703-4A8E-AF98-258ABEBD6053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483E50CB-D043-4125-8E5B-4AAF3E83E70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483E50CB-D043-4125-8E5B-4AAF3E83E70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483E50CB-D043-4125-8E5B-4AAF3E83E70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483E50CB-D043-4125-8E5B-4AAF3E83E70D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
