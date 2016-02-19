@@ -23,6 +23,8 @@ namespace TestAndCheck
             Console.WriteLine(aa.Length);
 
             ZLX.Framework.CP.Message.MessageInfo<M_S> cc = ZLX.Framework.CP.Message.MessageHelper.Deserialize<M_S>(aa);
+            Console.WriteLine(cc.Id);
+
             Console.WriteLine(cc.MessageType);
             Console.WriteLine(cc.TransferType);
             Console.WriteLine(cc.ContentArea.Name);

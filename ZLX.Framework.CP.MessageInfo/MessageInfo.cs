@@ -8,6 +8,16 @@ namespace ZLX.Framework.CP.Message
     public class MessageInfo<T>
     {
         /// <summary>
+        /// 消息戳
+        /// </summary>
+        private string _Id;
+        public string Id
+        {
+            get { return _Id; }
+            set { _Id = value; }
+        }
+
+        /// <summary>
         /// 默认0为心跳，1为消息
         /// </summary>
         public int MessageType { get; set; }
@@ -43,7 +53,10 @@ namespace ZLX.Framework.CP.Message
         public byte[] FileArea { get; set; }
 
 
-
+        public MessageInfo()
+        {
+            _Id = Guid.NewGuid().ToString();
+        }
 
 
     }

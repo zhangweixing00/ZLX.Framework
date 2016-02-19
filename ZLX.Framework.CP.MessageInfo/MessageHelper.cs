@@ -14,6 +14,9 @@ namespace ZLX.Framework.CP.Message
         public static byte[] Serialize<T>(this MessageInfo<T> info,string encryptKey = "ZLX.STAR")
         {
             byte[] data = null;
+
+            data = BytesMaker.Combine(data, BytesMaker.GetEncodingBytesWithLength(info.Id, null));
+
             data = BytesMaker.Combine(data, BytesMaker.GetIntBytes(info.MessageType));
             data = BytesMaker.Combine(data, BytesMaker.GetIntBytes((int)info.TransferType));
 
@@ -61,7 +64,7 @@ namespace ZLX.Framework.CP.Message
             MessageInfo<T> info = new MessageInfo<T>();
             BytesReader reader = new BytesReader(data);
             int totalLength = reader.ReadInt();
-
+            info.Id = reader.ReadString();
             info.MessageType = reader.ReadInt();
             info.TransferType = (TransferType)reader.ReadInt();
 
